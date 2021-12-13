@@ -1,0 +1,15 @@
+
+*Cuadrado*
+
+Perimetro = Lado + Lado + Lado + Lado || cm
+Area = Lado x Lado  || cm^2
+_____________________________________________
+*Triangulo*
+
+Perimetro = Lado + Lado + Lado
+Area = (Base x Altura)/2
+_____________________________________________
+*Circulo* (Diametro = Radio + Radio)
+
+Perimetro/Circunferencia = Diametro x PI
+Area = (Radio x Radio) * PI
