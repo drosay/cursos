@@ -7,7 +7,7 @@
     <title>Descuentos</title>
     <link rel="stylesheet" href="../css/general.css">
     <style>
-        input[type="number"]{
+        input:not(input[type="submit"]){
             font-size: .5em;
             margin-left: .2em;
             width: 7em;
@@ -17,25 +17,36 @@
             font-size: .4em;
             width: 6em;
         }
+        p{
+            color:#523365;
+            display:inline;
+            font-family: "open-sans-italic";
+            font-size: .6em;
+            text-decoration: none;
+        }
+        #trap:hover{
+            transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            font-size: 1em;
+            color:greenyellow;
+        }
     </style>
 </head>
 <body>
     <h1><a href="../../index.html">HOME</a></h1>
     <h2>Calcular Descuentos</h2>
-    <p>Calcular el descuento sobre un precio</p>
+    <p>Calcular el descuento sobre un precio con un</p>
+    <p id="trap">CUPÓN</p>
 
     <form action="#" id="form">
         <label for="price">Precio: </label>
         <input type="number" name="price" id="price" placeholder="0" min="1" max="99999" step="any" required>
         <br>
-        <label for="discount">Descuento: </label>
-        <input type="number" name="discount" id="discount" placeholder="0" min="0" max="100" step="any" required>
-        <br>
-        <label for="result">Articulo con descuento: </label>
-        <input type="number" name="result" id="result" placeholder="0" disabled >
+        <label for="coupon">Descuento: </label>
+        <input type="text" name="coupon" id="coupon" placeholder=">>CUPÓN<<" required>
         <br>
         <input type="submit" value="Descuento">
     </form>
+    <p id="result"></p>
     <script src="./descuentos.js"></script>    
 </body>
 </html>
