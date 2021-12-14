@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <style>
+        input[type="number"]{
+            font-size: .5em;
+            margin-left: .2em;
+            width: 7em;
+            
+        }
+        input[type="submit"]{
+            font-size: .4em;
+            width: 6em;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="../../index.html">HOME</a></h1>
+    <h2>Calcular Descuentos</h2>
+    <p>Calcular el descuento sobre un precio</p>
+
+    <form action="#" id="form">
+        <label for="price">Precio: </label>
+        <input type="number" name="price" id="price" placeholder="0" min="1" max="99999" step="any" required>
+        <br>
+        <label for="discount">Descuento: </label>
+        <input type="number" name="discount" id="discount" placeholder="0" min="0" max="100" step="any" required>
+        <br>
+        <label for="result">Articulo con descuento: </label>
+        <input type="number" name="result" id="result" placeholder="0" disabled >
+        <br>
+        <input type="submit" value="Descuento">
+    </form>
+    <script src="./descuentos.js"></script>    
+</body>
+</html>
