@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadistica</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <style>
+        form{
+            border-color: #523365;
+            border-radius: 5%;
+            border-style: solid;
+            border-width: .08em;
+            padding:.2em;
+            transition: 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background-color: #988b9c;
+        }
+        form:hover{
+            background-color: #f2f2f2;
+        }
+        h3{
+            font-size: .6em;
+        }
+        i{
+            font-family: 'open-sans-italic';
+            font-size: .5em;
+        }
+        i:last-of-type{
+            color:#523365;
+        }
+        input{
+            font-size: .5em;
+        }
+        input:not(input[type="submit"]){
+            margin-left: .2em;
+            width: 10em;
+        }
+        input[type="submit"]{
+            display: block;
+            margin:.2em auto 0;
+        }
+        section{
+            display:flex;
+            justify-content: space-between;
+            max-width: 25em;
+            min-height: 7em;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="../../index.html">HOME</a></h1>
+    <h2>Estadistica</h2>
+    <p>Calcula promedio, moda y mediana de una lista de elementos</p>
+
+    
+    <section id="container">
+        <form action="#" id="average">
+            <h3>Calculo de Promedio</h3>
+            <label for="average_values">Valores: </label>
+            <input type="text" name="average_values" id="average_values" placeholder="Valores" required>
+            <input type="submit" value="Calcular">
+            <p id="average_result"></p>
+
+        </form>
+        <form action="#" id="median">
+            <h3>Calculo de Mediana</h3>
+            <label for="median_values">Valores: </label>
+            <input type="text" name="median_values" id="median_values" placeholder="Valores" required>
+            <input type="submit" value="Calcular">
+            <p id="median_result"></p>
+        </form>
+        <form action="#" id="mode">
+            <h3>Calculo de Moda</h3>
+            <label for="mode_values">Valores: </label>
+            <input type="text" name="mode_values" id="mode_values" placeholder="Valores" required>
+            <input type="submit" value="Calcular">
+            <p id="mode_result"></p>
+        </form>
+    </section>
+        <i>Nota: Introdusca los valores separados por coma(,) . . .</i>
+        <i>(En la moda puede incluir cualquier tipo de caracteres)</i>
+
+    <script src="estadistica.js"></script>
+</body>
+</html>

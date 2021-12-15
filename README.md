@@ -17,6 +17,14 @@ Este ejercicio es para calcular y aplicar el descuento a diversos productos
     -1. Un archivo descuentos.html y un archivo descuentos.js
 
 
+## Estadistica
+
+Este ejercicio es para calcular el promedio, moda y mediana
+
+-En la carpeta estadistica se encuentra:
+    -1. Un archivo estadistica.html y un archivo estadistica.js
+
+
 ## Retos
 
 En esta carpeta se encuentran los retos de las distintas secciones del curso básico de javascript
