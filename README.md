@@ -25,6 +25,15 @@ Este ejercicio es para calcular el promedio, moda y mediana
     -1. Un archivo estadistica.html y un archivo estadistica.js
 
 
+## Salarios
+
+Este ejercicio es para el cálculo estadistico básico de los salarios de un conjunto de individuos en un país
+
+-En la carpeta salarios se encuentra:
+    -1. Un archivo salarios.html, un archivo salarios.js y un archivo analisis.js
+    -2. El archivo salarios.js solo contiene una lista de individuos con nombre y su salario mensual neto
+
+
 ## Retos
 
 En esta carpeta se encuentran los retos de las distintas secciones del curso básico de javascript
