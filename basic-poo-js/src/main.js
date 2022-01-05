@@ -4,7 +4,6 @@ const WorkGroup = require("./workgrup").WorkGroup;
 
 const usuario1 = new User({
     name:"Sancho Pancho",
-    age:17,
     password: "********",
     username: "sancho503",
 });
@@ -25,6 +24,7 @@ const grupo1 = new WorkGroup({
     name: "Familia",
     leader: usuario1,
 });
+
 console.log(usuario1);
 console.log(goal1);
 grupo1.addNewGoal(goal1);
